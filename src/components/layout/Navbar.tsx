@@ -66,7 +66,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center justify-center md:hidden"
+          className="flex items-center justify-center md:hidden text-slate-800"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -75,19 +75,19 @@ export default function Navbar() {
       {isOpen && (
         <div className="border-t border-gray-100 bg-white px-6 py-6 md:hidden">
           <div className="flex flex-col gap-5">
-            <a href="#" className="text-base font-medium text-gray-700">
+            <a href="#home" className="text-base font-medium text-gray-700">
               Home
             </a>
 
-            <a href="#" className="text-base font-medium text-gray-700">
+            <a href="#courses" className="text-base font-medium text-gray-700">
               Courses
             </a>
 
-            <a href="#" className="text-base font-medium text-gray-700">
+            <a href="#hostel" className="text-base font-medium text-gray-700">
               Hostel
             </a>
 
-            <a href="#" className="text-base font-medium text-gray-700">
+            <a href="#contact" className="text-base font-medium text-gray-700">
               Contact
             </a>
 

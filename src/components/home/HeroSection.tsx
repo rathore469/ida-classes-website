@@ -56,7 +56,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="relative h-[320px] w-full max-w-xl overflow-hidden rounded-[40px] md:h-[500px]">
+        <div className="relative h-[320px] w-full max-w-xl overflow-hidden rounded-[40px] md:h-[500px] aspect-[4/5]">
           <Image
             src="/images/hero-section-photo.png"
             alt="IDA Classes"
