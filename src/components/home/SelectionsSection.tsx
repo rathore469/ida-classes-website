@@ -180,12 +180,6 @@ export default function SelectionsSection() {
             </SwiperSlide>
           ))}
         </Swiper>
-
-        <div className="mt-14 flex justify-center md:mt-16">
-          <button className="rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-gray-700 shadow-sm transition-all duration-300 hover:border-blue-600 hover:text-blue-600 hover:shadow-lg md:px-7">
-            And many more successful selections
-          </button>
-        </div>
       </div>
     </section>
   );
