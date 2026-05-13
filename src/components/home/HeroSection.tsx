@@ -6,7 +6,7 @@ export default function HeroSection() {
       <div className="mx-auto flex min-h-[90vh] max-w-7xl flex-col items-center justify-between gap-12 px-6 py-16 md:flex-row">
         <div className="max-w-2xl">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-blue-600">
-            Jaipur’s Trusted Defence Academy
+            Defence Coaching & Hostel Facilities in Jaipur
           </p>
 
           <h1 className="mb-6 text-5xl font-bold leading-tight text-gray-900 md:text-6xl">

@@ -32,3 +32,36 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #cbd5e1;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 9999px;
+  background: #2563eb;
+}

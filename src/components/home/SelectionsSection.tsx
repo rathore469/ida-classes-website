@@ -1,5 +1,12 @@
+"use client";
+
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 const selections = [
   {
@@ -66,24 +73,27 @@ const selections = [
 
 export default function SelectionsSection() {
   return (
-    <section id="selections" className="bg-gray-50 py-24">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-16 text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">
+    <section
+      id="selections"
+      className="bg-gradient-to-b from-gray-50 to-white py-20 md:py-24"
+    >
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="mb-14 text-center md:mb-16">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-blue-600 md:text-sm">
             Proven Results
           </p>
 
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
             500+ Successful Selections
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-gray-600 md:mt-6 md:text-lg">
             NDA, Rajasthan Police, Army GD, Airforce X/Y Group, SSC GD and many
             more successful selections.
           </p>
         </div>
 
-        <div className="mb-16 grid grid-cols-2 gap-6 md:grid-cols-4">
+        <div className="mb-14 grid grid-cols-2 gap-4 md:mb-16 md:grid-cols-4 md:gap-6">
           {[
             { title: "500+", subtitle: "Total Selections" },
             { title: "Weekly", subtitle: "Mock Test" },
@@ -92,42 +102,61 @@ export default function SelectionsSection() {
           ].map((item, index) => (
             <div
               key={index}
-              className="rounded-[32px] border border-slate-200 bg-white p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="rounded-[24px] border border-slate-200 bg-white p-5 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:rounded-[32px] md:p-6"
             >
-              <h3 className="mb-2 text-3xl font-bold tracking-tight text-blue-600">
+              <h3 className="mb-2 text-2xl font-bold tracking-tight text-blue-600 md:text-3xl">
                 {item.title}
               </h3>
 
-              <p className="text-sm font-medium text-gray-600">
+              <p className="text-xs font-medium text-gray-600 md:text-sm">
                 {item.subtitle}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="relative">
-          <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 scrollbar-hide md:grid md:grid-cols-2 md:overflow-visible lg:grid-cols-3">
-            {selections.map((student, index) => (
-              <div
-                key={index}
-                className="group min-w-[85%] snap-center overflow-hidden rounded-[32px] border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:min-w-0"
-              >
-                <div className="relative h-[260px] w-full overflow-hidden md:h-[320px]">
+        <Swiper
+          modules={[Pagination]}
+          spaceBetween={16}
+          loop={true}
+          grabCursor={true}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1.12,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          className="pb-14"
+        >
+          {selections.map((student, index) => (
+            <SwiperSlide key={index}>
+              <div className="group overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:rounded-[32px]">
+                <div className="relative h-[240px] w-full overflow-hidden md:h-[320px]">
                   <Image
                     src={student.image}
                     alt={student.name}
                     fill
-                    sizes="(max-width: 768px) 85vw,
-                    (max-width: 1024px) 50vw,
-                    33vw"
+                    sizes="
+                      (max-width: 768px) 90vw,
+                      (max-width: 1024px) 50vw,
+                      33vw
+                    "
                     className="object-cover object-top transition duration-500 group-hover:scale-105"
                   />
                 </div>
 
-                <div className="space-y-6 p-6">
-                  <div className="flex items-start justify-between gap-4">
+                <div className="space-y-5 p-5 md:space-y-6 md:p-6">
+                  <div className="flex items-start justify-between gap-3 md:gap-4">
                     <div>
-                      <h3 className="text-2xl font-bold tracking-tight text-gray-900">
+                      <h3 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
                         {student.name}
                       </h3>
 
@@ -136,39 +165,25 @@ export default function SelectionsSection() {
                       </p>
                     </div>
 
-                    <div className="rounded-full bg-blue-50 px-4 py-2 text-xs font-semibold text-blue-700">
+                    <div className="rounded-full bg-blue-50 px-3 py-2 text-[11px] font-semibold leading-tight text-blue-700 md:px-4 md:text-xs">
                       {student.exam}
                     </div>
                   </div>
 
                   <div className="h-px w-full bg-slate-100" />
 
-                  <div className="flex items-center justify-between">
-                    <p className="text-sm font-medium text-gray-600">
-                      IDA Classes Jaipur
-                    </p>
-                  </div>
+                  <p className="text-sm font-medium text-gray-600">
+                    IDA Classes Jaipur
+                  </p>
                 </div>
               </div>
-            ))}
-          </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-          {/* LEFT FADE */}
-          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-gray-50 to-transparent md:hidden" />
-
-          {/* RIGHT FADE */}
-          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-gray-50 to-transparent md:hidden" />
-
-          {/* LEFT ARROW */}
-          <ChevronLeft className="absolute left-4 top-1/2 z-20 h-10 w-10 -translate-y-1/2 animate-pulse text-slate-400 md:hidden" />
-
-          {/* RIGHT ARROW */}
-          <ChevronRight className="absolute right-4 top-1/2 z-20 h-10 w-10 -translate-y-1/2 animate-pulse text-slate-400 md:hidden" />
-        </div>
-
-        <div className="mt-16 flex justify-center">
-          <button className="rounded-2xl border border-slate-300 bg-white px-7 py-3 text-sm font-semibold text-gray-700 shadow-sm transition-all duration-300 hover:border-blue-600 hover:text-blue-600 hover:shadow-lg">
-            View More Selections
+        <div className="mt-14 flex justify-center md:mt-16">
+          <button className="rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-gray-700 shadow-sm transition-all duration-300 hover:border-blue-600 hover:text-blue-600 hover:shadow-lg md:px-7">
+            And many more successful selections
           </button>
         </div>
       </div>
