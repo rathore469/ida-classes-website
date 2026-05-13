@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Shield,
   Target,
@@ -10,31 +11,37 @@ import {
 const courses = [
   {
     title: "NDA",
+    slug: "nda",
     description: "Written preparation, SSB guidance and physical training.",
     icon: Shield,
   },
   {
     title: "Army GD",
+    slug: "army-gd",
     description: "Complete Army GD preparation with daily physical practice.",
     icon: Dumbbell,
   },
   {
     title: "Airforce X/Y Group",
+    slug: "airforce",
     description: "Smart classes and practice sessions for Airforce exams.",
     icon: Plane,
   },
   {
     title: "Rajasthan Police",
+    slug: "rajasthan-police",
     description: "Written coaching and ground training for police selection.",
     icon: Target,
   },
   {
     title: "SSC GD",
+    slug: "ssc-gd",
     description: "Focused preparation with mock tests and discipline training.",
     icon: FileText,
   },
   {
     title: "NDA Foundation",
+    slug: "nda-foundation",
     description: "Foundation batch for school students preparing for NDA.",
     icon: GraduationCap,
   },
@@ -81,9 +88,12 @@ export default function CoursesSection() {
                   {course.description}
                 </p>
 
-                <button className="mt-6 text-sm font-semibold text-blue-600 transition-all duration-300 group-hover:translate-x-1">
+                <Link
+                  href={`/courses/${course.slug}`}
+                  className="pt-2 text-blue-600 font-semibold hover:translate-x-1 transition-transform"
+                >
                   Learn More →
-                </button>
+                </Link>
               </div>
             );
           })}
@@ -109,7 +119,12 @@ export default function CoursesSection() {
                 key={index}
                 className="rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-medium text-gray-700 shadow-sm transition-all duration-300 hover:border-blue-200 hover:text-blue-600 hover:shadow-md"
               >
-                {item}
+                <Link
+                  rel="stylesheet"
+                  href={`/courses/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                >
+                  {item}
+                </Link>
               </div>
             ))}
           </div>

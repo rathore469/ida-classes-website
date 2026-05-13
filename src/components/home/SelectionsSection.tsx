@@ -147,10 +147,6 @@ export default function SelectionsSection() {
                     <p className="text-sm font-medium text-gray-600">
                       IDA Classes Jaipur
                     </p>
-
-                    <button className="rounded-2xl border border-slate-200 px-4 py-2 text-sm font-semibold text-gray-700 transition-all duration-300 hover:border-blue-600 hover:text-blue-600">
-                      View
-                    </button>
                   </div>
                 </div>
               </div>

@@ -24,13 +24,17 @@ export default function HeroSection() {
           </p>
 
           <div className="mb-10 flex flex-wrap gap-4">
-            <button className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-700">
-              Call Now
-            </button>
+            <a href="tel:9667556598">
+              <button className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-700">
+                Call Now
+              </button>
+            </a>
 
-            <button className="rounded-xl border border-gray-300 px-8 py-4 font-semibold text-gray-800 transition hover:bg-gray-100">
-              Explore Courses
-            </button>
+            <a href="#courses">
+              <button className="rounded-xl border border-gray-300 px-8 py-4 font-semibold text-gray-800 transition hover:bg-gray-100">
+                Explore Courses
+              </button>
+            </a>
           </div>
 
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
