@@ -9,7 +9,7 @@ export default function DirectorSection() {
 
           <div className="relative h-[420px] w-[88%] overflow-hidden rounded-[32px] border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-xl sm:h-[500px] sm:w-[80%] lg:h-[620px] lg:w-[85%]">
             <Image
-              src="/images/director/director-photo.jpeg"
+              src="/images/director/director-photo.webp"
               alt="Director"
               fill
               sizes="(max-width: 640px) 88vw,

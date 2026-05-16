@@ -12,62 +12,62 @@ const selections = [
   {
     name: "Siwani Yadav",
     exam: "Airforce X Group",
-    image: "/images/selections/x-group-selection-1.png",
+    image: "/images/selections/x-group-selection-1.webp",
   },
   {
     name: "Hemant Dhakad",
     exam: "NDA",
-    image: "/images/selections/nda-selection-1.png",
+    image: "/images/selections/nda-selection-1.webp",
   },
   {
     name: "Sanjay kumar",
     exam: "RPF",
-    image: "/images/selections/rpf-selection-1.png",
+    image: "/images/selections/rpf-selection-1.webp",
   },
   {
     name: "Preety Godara",
     exam: "Chandigarh Police",
-    image: "/images/selections/chandigarh-police-selection-1.png",
+    image: "/images/selections/chandigarh-police-selection-1.webp",
   },
   {
     name: "Manisha Meena",
     exam: "Delhi Police",
-    image: "/images/selections/delhi-police-selection-1.png",
+    image: "/images/selections/delhi-police-selection-1.webp",
   },
   {
     name: "Sheetal",
     exam: "Rajasthan Police & RPF & Delhi Police",
-    image: "/images/selections/delhi-police&rpf-selection1.png",
+    image: "/images/selections/delhi-police&rpf-selection1.webp",
   },
   {
     name: "Pimlesh Meena",
     exam: "Delhi Police",
-    image: "/images/selections/delhi-police-selection-2.png",
+    image: "/images/selections/delhi-police-selection-2.webp",
   },
   {
     name: "Kajal Verma",
     exam: "Airforce X Group",
-    image: "/images/selections/x-group-selection-2.png",
+    image: "/images/selections/x-group-selection-2.webp",
   },
   {
     name: "Aditya Chaudary",
     exam: "President Body Guard",
-    image: "/images/selections/president-bodyguard-selection-1.png",
+    image: "/images/selections/president-bodyguard-selection-1.webp",
   },
   {
     name: "Sangita Kumari",
     exam: "Delhi Police",
-    image: "/images/selections/delhi-police-selection-4.png",
+    image: "/images/selections/delhi-police-selection-4.webp",
   },
   {
     name: "Mohit Kumar",
     exam: "RPF",
-    image: "/images/selections/rpf-selection-2.png",
+    image: "/images/selections/rpf-selection-2.webp",
   },
   {
     name: "Priyanka Kumari",
     exam: "Delhi Police",
-    image: "/images/selections/delhi-police-selection-3.png",
+    image: "/images/selections/delhi-police-selection-3.webp",
   },
 ];
 
@@ -75,7 +75,7 @@ export default function SelectionsSection() {
   return (
     <section
       id="selections"
-      className="bg-gradient-to-b from-gray-50 to-white py-20 md:py-24"
+      className="border-t border-slate-200 bg-slate-50 py-24"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-14 text-center md:mb-16">

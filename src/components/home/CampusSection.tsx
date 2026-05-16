@@ -25,9 +25,10 @@ export default function CampusSection() {
           <div className="group overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:rounded-[32px]">
             <div className="relative h-[240px] w-full overflow-hidden sm:h-[300px]">
               <Image
-                src="/images/campus/boys-hostel.png"
+                src="/images/campus/boys-hostel.webp"
                 alt="Boys Hostel"
                 fill
+                loading="eager"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center transition duration-500 group-hover:scale-105"
               />
@@ -65,7 +66,7 @@ export default function CampusSection() {
           <div className="group overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:rounded-[32px]">
             <div className="relative h-[240px] w-full overflow-hidden sm:h-[300px]">
               <Image
-                src="/images/campus/girls-hostel.png"
+                src="/images/campus/girls-hostel.webp"
                 alt="Girls Accommodation"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

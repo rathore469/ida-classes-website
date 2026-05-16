@@ -8,6 +8,8 @@ import CampusSection from "@/components/home/CampusSection";
 import DirectorSection from "@/components/home/DirectorSection";
 import Footer from "@/components/layout/Footer";
 import FloatingButtons from "@/components/layout/FoldingButtons";
+import LocationSection from "@/components/home/LocationSection";
+import MobileCTA from "@/components/layout/MobileCTA";
 
 export default function Home() {
   return (
@@ -17,30 +19,30 @@ export default function Home() {
       <section className="overflow-hidden border-b border-slate-200 bg-gradient-to-b from-white to-slate-50 py-3 lg:py-5">
         <div className="flex animate-marquee gap-3 lg:gap-6 px-4">
           {[
-            "/images/ribbon/ribbon-image-2.png",
-            "/images/ribbon/ribbon-image-4.png",
-            "/images/ribbon/ribbon-image-6.png",
-            "/images/ribbon/ribbon-image-3.png",
-            "/images/ribbon/ribbon-image-7.png",
-            "/images/ribbon/ribbon-image-1.png",
-            "/images/ribbon/ribbon-image-10.png",
-            "/images/ribbon/ribbon-image-5.png",
-            "/images/ribbon/ribbon-image-11.png",
-            "/images/selections/x-group-selection-1.png",
-            "/images/ribbon/ribbon-image-2.png",
-            "/images/ribbon/ribbon-image-4.png",
-            "/images/ribbon/ribbon-image-6.png",
-            "/images/ribbon/ribbon-image-3.png",
-            "/images/ribbon/ribbon-image-7.png",
-            "/images/ribbon/ribbon-image-1.png",
-            "/images/ribbon/ribbon-image-10.png",
-            "/images/ribbon/ribbon-image-5.png",
-            "/images/ribbon/ribbon-image-11.png",
-            "/images/selections/x-group-selection-1.png",
+            "/images/ribbon/ribbon-image-2.webp",
+            "/images/ribbon/ribbon-image-4.webp",
+            "/images/ribbon/ribbon-image-6.webp",
+            "/images/ribbon/ribbon-image-3.webp",
+            "/images/ribbon/ribbon-image-7.webp",
+            "/images/ribbon/ribbon-image-1.webp",
+            "/images/ribbon/ribbon-image-10.webp",
+            "/images/ribbon/ribbon-image-5.webp",
+            "/images/ribbon/ribbon-image-11.webp",
+            "/images/selections/x-group-selection-1.webp",
+            "/images/ribbon/ribbon-image-2.webp",
+            "/images/ribbon/ribbon-image-4.webp",
+            "/images/ribbon/ribbon-image-6.webp",
+            "/images/ribbon/ribbon-image-3.webp",
+            "/images/ribbon/ribbon-image-7.webp",
+            "/images/ribbon/ribbon-image-1.webp",
+            "/images/ribbon/ribbon-image-10.webp",
+            "/images/ribbon/ribbon-image-5.webp",
+            "/images/ribbon/ribbon-image-11.webp",
+            "/images/selections/x-group-selection-1.webp",
           ].map((image, index) => (
             <div
               key={index}
-              className=" relative h-28 w-44 sm:h-32 sm:w-52 lg:h-44 lg:w-72 xl:h-48 xl:w-80 flex-shrink-0 overflow-hidden rounded-2xl border border-slate-200 shadow-sm"
+              className=" relative h-24 w-40 md:h-28 md:w-48 sm:h-32 sm:w-52 lg:h-44 lg:w-72 xl:h-48 xl:w-80 flex-shrink-0 overflow-hidden rounded-2xl border border-slate-200 shadow-sm"
             >
               <Image
                 src={image}
@@ -60,8 +62,10 @@ export default function Home() {
       <CoursesSection />
       <CampusSection />
       <DirectorSection />
+      <LocationSection />
       <Footer />
       <FloatingButtons />
+      <MobileCTA />
     </main>
   );
 }

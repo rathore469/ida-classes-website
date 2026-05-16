@@ -12,10 +12,49 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "IDA Classes Jaipur | NDA & Defence Coaching",
+export const metadata: Metadata = {
+  title: "IDA Classes Jaipur – NDA & Defence Coaching Institute",
   description:
-    "IDA Classes Jaipur provides NDA, Army GD, Rajasthan Police, SSC GD and Airforce coaching with hostel facilities, physical training and disciplined preparation environment.",
+    "IDA Classes Jaipur provides NDA, Army GD, Airforce X/Y, SSC GD, Rajasthan Police and defence coaching with hostel facilities, physical training and disciplined preparation environment in Jaipur.",
+
+  keywords: [
+    "NDA coaching Jaipur",
+    "Defence coaching Jaipur",
+    "Army GD coaching Jaipur",
+    "Airforce coaching Jaipur",
+    "SSC GD coaching Jaipur",
+    "Rajasthan Police coaching Jaipur",
+    "Defence academy Jaipur",
+    "Hostel facility coaching Jaipur",
+  ],
+
+  metadataBase: new URL("https://idaclassesjaipur.in"),
+
+  openGraph: {
+    title: "IDA Classes Jaipur",
+    description:
+      "Defence coaching institute in Jaipur for NDA, Army GD, Airforce X/Y, SSC GD and Rajasthan Police preparation.",
+    url: "https://idaclassesjaipur.in",
+    siteName: "IDA Classes Jaipur",
+    images: [
+      {
+        url: "/images/hero/hero-main.jpg",
+        width: 1200,
+        height: 630,
+        alt: "IDA Classes Jaipur",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "IDA Classes Jaipur",
+    description:
+      "NDA, Army GD, Airforce and SSC GD coaching institute in Jaipur.",
+    images: ["/images/hero/hero-main.jpg"],
+  },
 };
 
 export default function RootLayout({

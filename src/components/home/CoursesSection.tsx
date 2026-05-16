@@ -73,7 +73,7 @@ export default function CoursesSection() {
             return (
               <div
                 key={index}
-                className="group flex h-full flex-col rounded-[28px] border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:rounded-[32px] md:p-8"
+                className="group flex h-full flex-col rounded-[28px] border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl md:rounded-[32px] md:p-8"
               >
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 md:h-16 md:w-16">
                   <Icon size={24} />
@@ -98,7 +98,7 @@ export default function CoursesSection() {
           })}
         </div>
 
-        <div className="mt-14 rounded-[28px] border border-slate-200 bg-gray-50 p-6 text-center shadow-sm transition-all duration-300 hover:shadow-xl md:mt-16 md:rounded-[32px] md:p-8">
+        <div className="mt-14 rounded-[28px] border border-slate-200 bg-gray-50 p-6 text-center shadow-sm md:mt-16 md:rounded-[32px] md:p-8">
           <p className="text-2xl font-bold tracking-tight text-gray-900">
             And many more preparation programs
           </p>
@@ -117,7 +117,7 @@ export default function CoursesSection() {
               <Link
                 key={index}
                 href={`/courses/${item.toLowerCase().replace(/\s+/g, "-")}`}
-                className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-all duration-300 hover:border-blue-200 hover:text-blue-600 hover:shadow-md"
+                className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-all duration-300 hover:border-blue-200 hover:text-blue-600 hover:-translate-y-1 hover:shadow-2xl"
               >
                 {item}
               </Link>

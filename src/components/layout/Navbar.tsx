@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-3">
           <Image
-            src="/images/logo/ida-logo.png"
+            src="/images/logo/ida-logo.webp"
             alt="IDA Classes Logo"
             width={42}
             height={42}

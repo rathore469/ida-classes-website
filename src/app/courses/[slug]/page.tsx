@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { courses } from "@/data/courses";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,19 +23,19 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
-}) {
+}): Promise<Metadata> {
   const { slug } = await params;
 
   const course = courses.find((item) => item.slug === slug);
 
   if (!course) {
     return {
-      title: "Course Not Found",
+      title: "Course Not Found | IDA Classes Jaipur",
     };
   }
 
   return {
-    title: `${course.title} | IDA Classes Jaipur`,
+    title: `${course.title} Coaching in Jaipur | IDA Classes Jaipur`,
     description: course.description,
   };
 }

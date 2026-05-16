@@ -62,7 +62,7 @@ export default function HeroSection() {
 
         <div className="relative h-[320px] w-full max-w-xl overflow-hidden rounded-[40px] md:h-[500px] aspect-[4/5]">
           <Image
-            src="/images/hero-section-photo.png"
+            src="/images/hero/hero-main.webp"
             alt="IDA Classes"
             fill
             className="object-cover"

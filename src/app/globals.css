@@ -45,7 +45,7 @@ html {
 
 .animate-marquee {
   width: max-content;
-  animation: marquee 22s linear infinite;
+  animation: marquee 40s linear infinite;
 }
 
 .swiper-pagination {
