@@ -4,7 +4,7 @@ export const courses = [
 
     title: "NDA Coaching",
 
-    heroImage: "/images/courses/nda-hero-image.png",
+    heroImage: "/images/courses/nda-hero-image.webp",
 
     description:
       "Comprehensive NDA preparation program including written coaching, SSB guidance, physical training and disciplined preparation environment.",
@@ -86,7 +86,7 @@ export const courses = [
 
     title: "Airforce X/Y Group",
 
-    heroImage: "/images/courses/airforce-hero-image.png",
+    heroImage: "/images/courses/airforce-hero-image.webp",
 
     description:
       "Preparation program for Airforce X and Y Group including written examination coaching, physical fitness guidance and personality development.",
@@ -190,7 +190,7 @@ export const courses = [
 
     title: "Army GD Coaching",
 
-    heroImage: "/images/courses/army-gd-hero-image.png",
+    heroImage: "/images/courses/army-gd-hero-image.webp",
 
     description:
       "Complete Army General Duty preparation program including written examination coaching, physical fitness training, medical guidance and disciplined defence preparation environment.",
@@ -303,7 +303,7 @@ export const courses = [
 
     title: "Rajasthan Police Coaching",
 
-    heroImage: "/images/courses/rajasthan-police-hero-image.png",
+    heroImage: "/images/courses/rajasthan-police-hero-image.webp",
 
     description:
       "Comprehensive Rajasthan Police preparation program including written examination coaching, physical efficiency training, Rajasthan GK preparation and disciplined practice sessions.",
@@ -416,7 +416,7 @@ export const courses = [
 
     title: "SSC GD Coaching",
 
-    heroImage: "/images/courses/ssc-gd-hero-image.png",
+    heroImage: "/images/courses/ssc-gd-hero-image.webp",
 
     description:
       "Focused SSC GD preparation program including written examination coaching, physical fitness training, mock tests and disciplined guidance for paramilitary force recruitment.",
@@ -528,7 +528,7 @@ export const courses = [
 
     title: "NDA Foundation Course",
 
-    heroImage: "/images/courses/nda-foundation-hero-image.png",
+    heroImage: "/images/courses/nda-foundation-hero-image.webp",
 
     description:
       "Integrated NDA foundation program for school students designed to build strong academic fundamentals, defence aptitude, discipline, communication skills and early preparation for NDA written examination and SSB interview.",
@@ -638,7 +638,7 @@ export const courses = [
 
     title: "Delhi Police Coaching",
 
-    heroImage: "/images/courses/delhi-police-hero-image.png",
+    heroImage: "/images/courses/delhi-police-hero-image.webp",
 
     description:
       "Complete Delhi Police preparation program including written examination coaching, physical fitness training, mock tests, current affairs preparation and disciplined practice environment for police recruitment.",
@@ -750,7 +750,7 @@ export const courses = [
 
     title: "Army Clerk Coaching",
 
-    heroImage: "/images/courses/army-clerk-hero-image.png",
+    heroImage: "/images/courses/army-clerk-hero-image.webp",
 
     description:
       "Specialized Army Clerk preparation program including written examination coaching, computer aptitude preparation, typing practice, physical training and disciplined defence guidance environment.",
@@ -863,7 +863,7 @@ export const courses = [
 
     title: "Army Nursing Assistant Coaching",
 
-    heroImage: "/images/courses/nursing-assistant-hero-image.png",
+    heroImage: "/images/courses/nursing-assistant-hero-image.webp",
 
     description:
       "Specialized Army Nursing Assistant preparation program including biology-focused written coaching, medical awareness training, physical fitness preparation and disciplined defence guidance environment.",
@@ -970,7 +970,7 @@ export const courses = [
 
     title: "Group D Coaching",
 
-    heroImage: "/images/courses/group-d-hero-image.png",
+    heroImage: "/images/courses/group-d-hero-image.webp",
 
     description:
       "Complete Group D preparation program including written examination coaching, reasoning practice, mathematics preparation, mock tests and disciplined classroom guidance for government job aspirants.",
@@ -1080,7 +1080,7 @@ export const courses = [
 
     title: "RPF Coaching",
 
-    heroImage: "/images/courses/rpf-hero-image.png",
+    heroImage: "/images/courses/rpf-hero-image.webp",
 
     description:
       "Comprehensive RPF preparation program including written examination coaching, physical efficiency training, reasoning practice, mock tests and disciplined preparation environment for Railway Protection Force recruitment.",
@@ -1193,7 +1193,7 @@ export const courses = [
 
     title: "Chandigarh Police Coaching",
 
-    heroImage: "/images/courses/chandigarh-police-hero-image.png",
+    heroImage: "/images/courses/chandigarh-police-hero-image.webp",
 
     description:
       "Professional Chandigarh Police preparation program including written examination coaching, physical efficiency training, current affairs preparation, mock tests and disciplined practice environment for police recruitment.",
@@ -1306,7 +1306,7 @@ export const courses = [
 
     title: "SSB Interview Coaching",
 
-    heroImage: "/images/courses/ssb-hero-image.png",
+    heroImage: "/images/courses/ssb-hero-image.webp",
 
     description:
       "Comprehensive SSB interview preparation program focused on psychological testing, officer-like qualities development, group tasks, personal interviews, communication skills and personality enhancement for defence aspirants.",
@@ -1418,7 +1418,7 @@ export const courses = [
 
     title: "Indian Navy Coaching",
 
-    heroImage: "/images/courses/navy-hero-image.png",
+    heroImage: "/images/courses/navy-hero-image.webp",
 
     description:
       "Comprehensive Indian Navy preparation program including written examination coaching, physical fitness training, medical guidance, mock tests and disciplined preparation environment for Navy SSR, AA and MR entries.",
