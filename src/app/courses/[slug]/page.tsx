@@ -112,6 +112,7 @@ export default async function CoursePage({ params }: Props) {
 
             <div className="mt-8 flex flex-wrap gap-3 md:mt-10 md:gap-4">
               <a
+                data-track="call"
                 href="tel:9667556598"
                 className="inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-6 py-4 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-700 hover:shadow-2xl md:px-7"
               >
@@ -322,6 +323,7 @@ export default async function CoursePage({ params }: Props) {
 
             <div className="mt-8 md:mt-10">
               <a
+                data-track="call"
                 href="tel:9667556598"
                 className="inline-flex items-center gap-2 rounded-2xl bg-white px-6 py-4 text-sm font-semibold text-slate-900 transition-all duration-300 hover:scale-[1.03] md:px-7"
               >
@@ -352,6 +354,7 @@ export default async function CoursePage({ params }: Props) {
 
             <div className="flex flex-wrap gap-3 lg:justify-end md:gap-4">
               <a
+                data-track="call"
                 href="tel:9667556598"
                 className="rounded-2xl bg-white px-6 py-4 font-semibold text-blue-600 transition hover:scale-[1.02] md:px-7"
               >
@@ -359,6 +362,7 @@ export default async function CoursePage({ params }: Props) {
               </a>
 
               <a
+                data-track="whatsapp"
                 href="https://wa.me/919667556598"
                 target="_blank"
                 rel="noopener noreferrer"

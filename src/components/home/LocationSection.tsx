@@ -87,6 +87,7 @@ export default function LocationSection() {
 
                 <a
                   href="tel:9667556598"
+                  data-track="call"
                   className="rounded-2xl border border-slate-300 px-7 py-4 font-semibold text-slate-800 transition hover:bg-slate-100"
                 >
                   Call Now

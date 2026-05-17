@@ -57,6 +57,7 @@ export default function Navbar() {
           </a>
 
           <a
+            data-track="call"
             href="tel:9667556598"
             className="rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
           >
@@ -92,6 +93,7 @@ export default function Navbar() {
             </a>
 
             <a
+              data-track="call"
               href="tel:9667556598"
               className="mt-2 rounded-xl bg-blue-600 px-5 py-4 text-center text-base font-semibold text-white"
             >
