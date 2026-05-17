@@ -58,6 +58,50 @@ export const metadata: Metadata = {
   },
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+
+  "@type": "EducationalOrganization",
+
+  name: "IDA Classes Jaipur",
+
+  url: "https://idaclassesjaipur.in",
+
+  logo: "https://idaclassesjaipur.in//images/logl/ida-logo.webp",
+
+  image: "https://idaclassesjaipur.in/images/hero/hero-main.webp",
+
+  telephone: "+91 9667556598",
+
+  email: "dev.is.rathore@gmail.com",
+
+  address: {
+    "@type": "PostalAddress",
+
+    streetAddress:
+      "Shop no. 2, Main Hathoj Stand, Kalwar Rd, behind Khandaka Hospital",
+
+    addressLocality: "Jaipur",
+
+    addressRegion: "Rajasthan",
+
+    postalCode: "302012",
+
+    addressCountry: "IN",
+  },
+
+  areaServed: "Jaipur",
+
+  description:
+    "IDA Classes Jaipur provides NDA, Army GD, Airforce, SSC GD and Rajasthan Police coaching with hostel facilities and physical training.",
+
+  sameAs: [
+    "https://www.instagram.com/idaclassesjaipur/",
+    "https://www.youtube.com/@idaclassesjaipur/featured",
+    "https://www.facebook.com/IDAclassesjaipur/",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -79,6 +123,12 @@ export default function RootLayout({
           />
         </noscript>
         <GoogleTagManager />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
         {children}
       </body>
     </html>

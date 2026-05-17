@@ -26,17 +26,67 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
 
-  const course = courses.find((item) => item.slug === slug);
+  const titles: Record<string, string> = {
+    nda: "NDA Coaching in Jaipur | IDA Classes Jaipur",
+    airforce: "Airforce Coaching in Jaipur | IDA Classes Jaipur",
+    navy: "Navy Coaching in Jaipur | IDA Classes Jaipur",
+    "ssc-gd": "SSC GD Coaching in Jaipur | IDA Classes Jaipur",
+    "delhi-police": "Delhi Police Coaching in Jaipur | IDA Classes Jaipur",
+    "rajasthan-police":
+      "Rajasthan Police Coaching in Jaipur | IDA Classes Jaipur",
+  };
 
-  if (!course) {
-    return {
-      title: "Course Not Found | IDA Classes Jaipur",
-    };
-  }
+  const descriptions: Record<string, string> = {
+    nda: "Join NDA coaching in Jaipur with physical training, hostel facilities, written preparation, SSB guidance and disciplined mentorship at IDA Classes Jaipur.",
+
+    airforce:
+      "Best Airforce coaching in Jaipur for Airforce X & Y Group preparation with physical training, hostel facilities and expert guidance.",
+
+    navy: "Prepare for Indian Navy exams with expert coaching, physical preparation and hostel facilities at IDA Classes Jaipur.",
+
+    "ssc-gd":
+      "SSC GD coaching in Jaipur with complete written preparation, physical training and hostel facilities at IDA Classes Jaipur.",
+
+    "delhi-police":
+      "Delhi Police coaching in Jaipur with physical preparation, written coaching and disciplined classroom environment.",
+
+    "rajasthan-police":
+      "Rajasthan Police coaching in Jaipur with physical training, written classes and hostel facilities at IDA Classes Jaipur.",
+  };
+
+  const title =
+    titles[slug] || "Defence Coaching in Jaipur | IDA Classes Jaipur";
+
+  const description =
+    descriptions[slug] ||
+    "Best defence coaching institute in Jaipur with NDA, Airforce, Navy, SSC GD and Police exam preparation.";
 
   return {
-    title: `${course.title} Coaching in Jaipur | IDA Classes Jaipur`,
-    description: course.description,
+    title,
+    description,
+
+    keywords: [
+      "Defence Coaching Jaipur",
+      "NDA Coaching Jaipur",
+      "Airforce Coaching Jaipur",
+      "SSC GD Coaching Jaipur",
+      "Police Coaching Jaipur",
+      "Hostel Facilities Jaipur",
+      "Defence Academy Jaipur",
+    ],
+
+    openGraph: {
+      title,
+      description,
+      url: `https://idaclassesjaipur.in/courses/${slug}`,
+      siteName: "IDA Classes Jaipur",
+      locale: "en_IN",
+      type: "website",
+    },
+
+    alternates: {
+      canonical: `https://idaclassesjaipur.in/courses/${slug}`,
+    },
   };
 }
 
