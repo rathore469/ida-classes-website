@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function LeadPopup() {
   const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const popupClosed = localStorage.getItem("ida_popup_closed");
@@ -106,6 +107,10 @@ export default function LeadPopup() {
               onSubmit={async (e) => {
                 e.preventDefault();
 
+                if (loading) return;
+
+                setLoading(true);
+
                 const formData = new FormData(e.currentTarget);
 
                 const name = formData.get("name");
@@ -113,18 +118,6 @@ export default function LeadPopup() {
                 const course = formData.get("course");
 
                 try {
-                  await fetch(
-                    "https://script.google.com/macros/s/AKfycbwYgB7ge-6OTmB6raUpeVSKFSNW18w5gp-RYA1rVdU_LrwBEY0_B1xbG4i_lDhk58eBfA/exec",
-                    {
-                      method: "POST",
-                      body: JSON.stringify({
-                        name,
-                        phone,
-                        course,
-                      }),
-                    },
-                  );
-
                   const message = `Hello IDA Classes,
 
 I want to book a free demo class.
@@ -148,8 +141,22 @@ Course: ${course}`;
                   window.open(whatsappURL, "_blank");
 
                   closePopup();
+
+                  fetch(
+                    "https://script.google.com/macros/s/AKfycbwYgB7ge-6OTmB6raUpeVSKFSNW18w5gp-RYA1rVdU_LrwBEY0_B1xbG4i_lDhk58eBfA/exec",
+                    {
+                      method: "POST",
+                      body: JSON.stringify({
+                        name,
+                        phone,
+                        course,
+                      }),
+                    },
+                  );
                 } catch (error) {
                   console.log(error);
+                } finally {
+                  setLoading(false);
                 }
               }}
             >
@@ -190,9 +197,10 @@ Course: ${course}`;
 
               <button
                 type="submit"
-                className="h-14 w-full rounded-2xl bg-blue-600 text-base font-semibold transition-all duration-300 hover:bg-blue-500 shadow-[0_10px_30px_rgba(37,99,235,0.35)]"
+                disabled={loading}
+                className="h-14 w-full rounded-2xl bg-blue-600 text-base font-semibold transition-all duration-300 hover:bg-blue-500 shadow-[0_10px_30px_rgba(37,99,235,0.35)] disabled:cursor-not-allowed disabled:opacity-60"
               >
-                Book Free Demo Class
+                {loading ? "Processing..." : "Book Free Demo Class"}
               </button>
             </form>
           </div>
