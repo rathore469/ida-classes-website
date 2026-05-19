@@ -137,6 +137,14 @@ Course: ${course}`;
                     message,
                   )}`;
 
+                  window.dataLayer = window.dataLayer || [];
+
+                  window.dataLayer.push({
+                    event: "generate_lead",
+                    lead_source: "website_popup_form",
+                    course_selected: course,
+                  });
+
                   window.open(whatsappURL, "_blank");
 
                   closePopup();
