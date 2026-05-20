@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "IDA Classes Jaipur – NDA & Defence Coaching Institute",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
   description:
     "IDA Classes Jaipur provides NDA, Army GD, Airforce X/Y, SSC GD, Rajasthan Police and defence coaching with hostel facilities, physical training and disciplined preparation environment in Jaipur.",
 
@@ -68,7 +73,7 @@ const localBusinessSchema = {
 
   url: "https://idaclassesjaipur.in",
 
-  logo: "https://idaclassesjaipur.in//images/logl/ida-logo.webp",
+  logo: "https://idaclassesjaipur.in//images/logo/ida-logo.webp",
 
   image: "https://idaclassesjaipur.in/images/hero/hero-main.webp",
 
