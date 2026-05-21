@@ -47,7 +47,7 @@ export default function Footer() {
 
           <div className="space-y-3 text-gray-400">
             <p>
-              <a href="#hostel" className="transition hover:text-blue-600">
+              <a href="#home" className="transition hover:text-blue-600">
                 Home
               </a>
             </p>
