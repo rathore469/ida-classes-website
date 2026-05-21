@@ -17,9 +17,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "IDA Classes Jaipur – NDA & Defence Coaching Institute",
   icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
-    apple: "/icon.png",
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
   description:
     "IDA Classes Jaipur provides NDA, Army GD, Airforce X/Y, SSC GD, Rajasthan Police and defence coaching with hostel facilities, physical training and disciplined preparation environment in Jaipur.",
@@ -73,7 +72,7 @@ const localBusinessSchema = {
 
   url: "https://idaclassesjaipur.in",
 
-  logo: "https://idaclassesjaipur.in//images/logo/ida-logo.webp",
+  logo: "https://idaclassesjaipur.in/images/logo/ida-logo.webp",
 
   image: "https://idaclassesjaipur.in/images/hero/hero-main.webp",
 
@@ -119,6 +118,9 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <meta name="apple-mobile-web-app-title" content="IDA Classes" />
+      </head>
       <body className="min-h-full flex flex-col">
         <noscript>
           <iframe
