@@ -43,6 +43,13 @@ export default function Navbar() {
           </a>
 
           <a
+            href="#selections"
+            className="text-sm font-medium text-gray-700 transition hover:text-blue-600"
+          >
+            selections
+          </a>
+
+          <a
             href="#hostel"
             className="text-sm font-medium text-gray-700 transition hover:text-blue-600"
           >

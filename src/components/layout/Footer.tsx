@@ -46,10 +46,32 @@ export default function Footer() {
           <h3 className="mb-5 text-2xl font-semibold">Quick Links</h3>
 
           <div className="space-y-3 text-gray-400">
-            <p>Home</p>
-            <p>Courses</p>
-            <p>Selections</p>
-            <p>Hostel Facilities</p>
+            <p>
+              <a href="#hostel" className="transition hover:text-blue-600">
+                Home
+              </a>
+            </p>
+            <p>
+              <a href="#courses" className=" transition hover:text-blue-600">
+                Courses
+              </a>
+            </p>
+            <p>
+              <a href="#selections" className="transition hover:text-blue-600">
+                Selections
+              </a>
+            </p>
+            <p>
+              <a href="#hostel" className="transition hover:text-blue-600">
+                Hostel Facilities
+              </a>
+            </p>
+            <a
+              href="/privacy-policy"
+              className="hover:text-blue-500 transition"
+            >
+              Privacy Policy
+            </a>
           </div>
         </div>
 
