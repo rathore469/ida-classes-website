@@ -81,7 +81,7 @@ export default function Footer() {
           <div className="space-y-4 text-gray-400">
             <p>Shop no. 2, Main Hathoj Stand, Kalwar Rd, Jaipur</p>
 
-            <p>+91 96675 56598</p>
+            <p>9667556598</p>
 
             <p>dev.is.rathore@gmail.com</p>
           </div>
