@@ -14,7 +14,7 @@ export default function LeadPopup() {
       const lastClosed = parseInt(popupClosed);
       const now = Date.now();
 
-      if (now - lastClosed < 24 * 60 * 60 * 1000) {
+      if (now - lastClosed < 1000) {
         return;
       }
     }
