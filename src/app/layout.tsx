@@ -121,6 +121,12 @@ export default function RootLayout({
     >
       <head>
         <meta name="apple-mobile-web-app-title" content="IDA Classes" />
+
+        <meta
+         name="google-adsense-account"
+         content="ca-pub-1834985841731729"
+        />
+        
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1834985841731729"
